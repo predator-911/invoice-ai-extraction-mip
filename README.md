@@ -30,5 +30,54 @@ The notebook `MIP.ipynb` is fully annotated and Colab-ready, supporting single o
 
 ---
 
-## 🗂️ File Structure
+---
+
+## 🛠️ Requirements
+
+- Google Colab (recommended) or Jupyter Notebook
+- Python 3.8+
+- GPU for fast inference (in Colab: Runtime > Change runtime type > GPU)
+- Key packages are installed automatically at runtime (see notebook).
+
+---
+
+## 🧑‍💻 Usage Guide
+
+1. **Open** the `MIP.ipynb` notebook in Google Colab.
+2. **Run** all cells sequentially:
+    - Installs dependencies and loads the model.
+    - Prompts you to upload your invoice (PDF or image).
+    - Processes each page, extracting all required fields.
+3. **Download** the structured JSON result at the end.
+4. **Customize fields:**  
+   Edit the `fields_to_extract` dictionary to add or remove extracted fields as required by your use-case.
+
+---
+
+## 📈 Scalability
+
+- To add new extraction fields: simply add another item/question in the extraction dictionary.
+- To process large volumes or folders of invoices, wrap the core pipeline in a loop over your file list.
+- The AI model (Donut) can be further fine-tuned for your organizational data if higher accuracy is required.
+
+---
+
+## 📗 Assignment Summary
+
+This notebook fulfills all assignment requirements by:
+- Performing automated field extraction on any invoice format.
+- Providing reliable accuracy via modern AI and robust fallbacks.
+- Allowing easy extension to new fields and layouts for future scalability.
+- Delivering clean, professional outputs and clear explanations so anyone can understand and build upon the code.
+
+---
+
+## 🏷️ Credits
+
+Developed by **Lakshya Kumar** as part of the Invoice Key-Value Extraction assignment.
+
+---
+
+> For questions or feedback, please open an issue or reach out via GitHub!
+
 
